@@ -1,5 +1,3 @@
-import React, { ReactElement } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,13 +6,15 @@ function App() {
     name:"ram"
   }
   let {count,name}=state;
+  let styles={
+    backgroundColor:"blue"
+  }
   return (
     <div className="App">
-      <h1>{count}</h1>
+      <h1 style={styles}>{count}</h1>
       <h1>{name}</h1>
     </div>
   );
-
 }
 
 export default App;
